@@ -1,4 +1,9 @@
 jobs:
+    - name: kube-fun_runCI
+      type: runCI
+      steps:
+          - OUT: app-image
+
     - name: app-manifest
       type: manifest
       steps:
