@@ -9,3 +9,8 @@ build:
 
     push:
         - docker push pmartin/hello-node:$BUILD_NUMBER
+
+integrations:
+    hub:
+        - integrationName: pauls-docker-hub
+          type: docker
