@@ -1,0 +1,5 @@
+jobs:
+    - name: app-manifest
+      type: manifest
+      steps:
+          - IN: app-image
