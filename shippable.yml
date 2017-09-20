@@ -7,6 +7,9 @@ build:
     ci:
         - docker build -t pmartin/hello-node:$BUILD_NUMBER .
 
+    post_ci:
+        - echo "versionName=$BUILD_NUMBER" >> $JOB_STATE/app-image.env
+
     push:
         - docker push pmartin/hello-node:$BUILD_NUMBER
 
