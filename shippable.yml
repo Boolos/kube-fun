@@ -5,7 +5,7 @@ node_js:
 
 build:
     ci:
-        - docker build -t pmartin/hello-node .
+        - docker build -t pmartin/hello-node:$BUILD_NUMBER .
 
     push:
         - docker push pmartin/hello-node:$BUILD_NUMBER
