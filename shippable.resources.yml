@@ -7,6 +7,6 @@ resources:
       seed:
           versionName: master.9
 
-    - name: k8s-cluster
+    - name: app-cluster
       type: cluster
       integration: pauls-k8s-cluster
