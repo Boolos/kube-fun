@@ -1,0 +1,8 @@
+resources:
+    - name: app-image
+      type: image
+      integration: pauls-docker-hub
+      pointer:
+          sourceName: pmartin/hello-node
+      seed:
+          versionName: 3
