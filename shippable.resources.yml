@@ -5,4 +5,4 @@ resources:
       pointer:
           sourceName: pmartin/hello-node
       seed:
-          versionName: 3
+          versionName: "3"
