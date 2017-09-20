@@ -1,0 +1,11 @@
+language: node_js
+
+node_js:
+    - 7.4.0
+
+build:
+    ci:
+        - docker build -t pmartin/hello-node .
+
+    push:
+        - docker push pmartin/hello-node:$BUILD_NUMBER
