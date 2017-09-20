@@ -6,3 +6,7 @@ resources:
           sourceName: pmartin/hello-node
       seed:
           versionName: master.9
+
+    - name: k8s-cluster
+      type: cluster
+      integration: pauls-k8s-cluster

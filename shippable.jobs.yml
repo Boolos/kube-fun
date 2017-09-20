@@ -8,3 +8,9 @@ jobs:
       type: manifest
       steps:
           - IN: app-image
+
+    - name: app-deploy
+      type: deploy
+      steps:
+          - IN: app-manifest
+          - IN: app-cluster
